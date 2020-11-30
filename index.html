@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<head>
+    <title>Полино4ка</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="connect-type" content="text/html;charset=UTF-8"/>
+    <script type="text/javascript">
+        var a;
+
+            if (navigator.userAgent.search(/Safari/) > 0) {a = 'Вы пользуетесь Safari'};
+
+            if (navigator.userAgent.search(/Firefox/) > 0) {a = 'Вы пользуетесь MozillaFirefox'};
+
+            if (navigator.userAgent.search(/MSIE/) > 0 || navigator.userAgent.search(/NET CLR /) > 0) {a = 'Вы пользуетесь Internet Explorer'};
+
+            if (navigator.userAgent.search(/Chrome/) > 0) {a = 'Вы пользуетесь Google Chrome'};
+
+            if (navigator.userAgent.search(/YaBrowser/) > 0) {a = 'Вы пользуетесь Яндекс браузер'};
+
+
+            if (navigator.userAgent.search(/OPR/) > 0) {a = 'Вы пользуетесь Opera'};
+
+            if (navigator.userAgent.search(/Konqueror/) > 0) {a = 'Вы пользуетесь Konqueror'};
+
+            if (navigator.userAgent.search(/Iceweasel/) > 0) {a = 'Вы пользуетесь Debian Iceweasel'};
+
+            if (navigator.userAgent.search(/SeaMonkey/) > 0) {a = 'Вы пользуетесь SeaMonkey'};
+
+            if (navigator.userAgent.search(/Edge/) > 0) {a = 'Вы пользуетесь Microsoft Edge'};
+
+            alert(a);
+            function hello() {
+    var id;
+    id=window.open("","example","width=600, height=650");
+    id.focus();
+    id.document.open();
+    id.document.write("<img style='width:300px; height: 450px' src='polina3.jpg'>");
+    id.document.write("<input type='button' value='Закрыть окно' onclick='window.close();'> </form>");
+    id.document.close();
+    }
+    var flag = 0;
+    var idp = null;
+    function myclock()
+    {
+	    if(flag == 1)
+		    d = new Date();
+	    window.document.c.f.value =
+	    d.getHours() + ": " + d.getMinutes() + ": " + d.getSeconds();
+        idp=setTimeout("myclock(); ", 500);
+    }
+
+    function flagss()
+    {
+	    if(flag == 0) flag = 1; else flag = 0;
+    }
+    function sti() {
+            var years = prompt('На какой стредний балл идет девочка?');
+            alert('Полина идет на средний балл ' + years)
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="scrolling">Вам понравилась бегущая строка, поэтому я ее буду вставлять в каждую лабораторную. Эта страница посвящена Полиночке Романовской, лучшей старосте на свете.</div>      
+    </div>
+    <div class="button">
+        <form>
+        <input type="button" value="Вы знаете Полину Романовскую? " 
+            onclick="
+                    if (window.confirm('Конечно знаю!') == true) {
+                        document.forms[0].elements[0].value='Я и не сомневалась!';
+                    } else {
+                        document.forms[0].elements[0].value='Вам срочно нужно познакомиться с ней!';
+                    }
+                "/>
+            </br>
+    </form>
+    </div>
+    <div class="box">
+        <div><img src="polina.jpg"></div>
+        <div>
+            <p>Это Полина Романовская и ее тотемное животное. Мы познакомились с ней в последний день подачи документов на бюджет. Когда она мне написала, я не думала, что Полина такая ...</p>
+            <a href="javascript:window.alert('... такая многогранная личность!')">
+                Нажмите, чтобы узнать больше информации
+            </a>
+        </div>
+    </div>
+    <div class="box2">
+        <div>
+                <img src="stih.jpg">
+            </div>
+        <div>
+            <p>Нужно сказать, что Полина очень творческий человек. Она пишет очень красивые стихотворение. Лучше один раз прочитать, чем сто раз говорить...</p>
+            <form>
+                <input type="button" value="Написать Полине благодарность" 
+                    onclick="document.forms[0].elements[1].value=window.prompt('Введите сообщение'); " >
+            </form>
+        </div>
+            
+            <div>
+                <img src="stih1.jpg">
+            </div>
+            
+    </div>
+    <div class="box">
+        <div>
+            <p>Полина выглядит всегда прекрасно! Поговоривают, у нее есть личный визажист...</p>
+        <form name="2">
+        <input type="button" onclick="hello();" value="Узнать правду"/>
+    </form>
+        </div>
+        <div>
+            <img src="polina2.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div>
+            <img src="polina4.jpg">
+        </div>
+        <div>
+            <form name="c">
+        <p>На тот случай, если вы забыли время: </p>
+        <input name="f" size="8" />
+        <input type="button" value="Start/Stop" onclick="flagss(); myclock(); " />
+    </form>
+        </div>
+        
+    </div>
+    <div class="box">
+        <div>
+            <p>А еще Полиночка у нас хозяйка!</p>
+            <img style="width: 600px; height: 170px;" src="egg.jpg">
+        </div>
+        <div><img src="polina5.jpg"></div>
+    </div>
+    <div class="box2">
+        <div>
+            <img src="polina6.jpg">
+        </div>
+        <div>
+            <p>Девочка учится! Не мешайте!</p>
+            <form name="2">
+                <input type="button" onclick="sti();" value="Важный вопрос"/>
+            </form>
+        </div>
+        <div>
+            <img src="polina7.jpg">
+        </div>
+    </div>
+    <h2>Какой ты сегодня?</h2>
+    <div class="character">
+        <div>
+            <img src="character1.jpg">
+            <span class="span1">Стильный</span>
+        </div>
+        <div>
+            <img src="character2.jpg">
+            <span class="span1">Смешной</span>
+        </div> 
+        <div>
+            <img src="character3.jpg">
+            <span class="span1">Серьезный</span>
+        </div> 
+        <div>
+            <img src="character4.jpg">
+            <span class="span1">Побитый</span>
+        </div> 
+        <div>
+            <img src="character5.jpg">
+            <span class="span1">Устрашающий</span>
+        </div> 
+        <div>
+            <img src="character6.jpg">
+            <span class="span1">Потерянный</span>
+        </div> 
+        <div>
+            <img src="character7.jpg">
+            <span class="span1">Голодный</span>
+        </div> 
+        <div>
+            <img src="character8.jpg">
+            <span class="span1">Усидчивый</span>
+        </div> 
+        <div>
+            <img src="character9.jpg">
+            <span class="span1">Игривый</span>
+        </div>  
+    </div>
+    <div style="text-align: center; background-color: #dfeed9;">
+        <p style="font-size: 30px;">Какой ты сегодня?<Br>
+        <input type="radio" name="answer" value="a1">Стильный<Br>
+        <input type="radio" name="answer" value="a2">Смешной<Br>
+        <input type="radio" name="answer" value="a3">Серьезный<Br>
+        <input type="radio" name="answer" value="a4">Побитый<Br>
+        <input type="radio" name="answer" value="a5">Устрашающий<Br>
+        <input type="radio" name="answer" value="a6">Потерянный<Br>
+        <input type="radio" name="answer" value="a7">Голодный<Br>
+        <input type="radio" name="answer" value="a8">Усидчивый<Br>
+        <input type="radio" name="answer" value="a9">Игривый<Br>
+    
+    </p>
+    </div>
+</body>

@@ -1,0 +1,127 @@
+body{
+    background:url(fon.jpg);
+    background-size:100%;
+    background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .scrolling {
+    will-change: transform;
+    font-size: 60px;
+    animation: marquee 120s linear infinite;
+    display: inline-block;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to { 
+      transform: translateX(-100%);
+    }
+  }
+input{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 12px 40px;
+    margin: 10px 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg, #82d76a 0%, #b9de33 50%, #00780a 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+    box-shadow: 0 16px 32px 0 rgba(0,40,120,.35);
+    transition: .5s;
+    text-align: center;
+    cursor: pointer;
+} 
+input:hover{
+    box-shadow: 0 0 0 0 rgba(0,40,120,0);
+    background-position: 0 0;
+}
+.button{
+    text-align: center;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
+.box div{
+    width: 50%;
+    text-align: center;
+}
+img{
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
+    -o-box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
+    border: 5px solid rgba(255, 255, 255, .1); 
+}
+.box div img{
+    width:50%;
+}
+.box div p{
+    font-size: 40px;
+    text-align: left;
+    background-color: #dfeed9;
+    border-left: 5px solid black;
+    padding-left: 20px;
+}
+.box div a{
+    background-color: #dfeed9;
+}
+.box2{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.box2 div{
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+}
+.box2 div p{
+    font-size: 40px;
+    background-color: #dfeed9;
+}
+.box2 div img{
+    width:100%;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    background-color: #82d76a;
+}
+.character{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+    
+}
+.character div{
+    width:30%;
+    background-color: #dfeed9;
+    margin: 10px;
+    text-align: center;
+}
+.character div img{
+    width:80%;
+}
+.span1{
+    font-size: 30px;
+}
